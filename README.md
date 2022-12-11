@@ -23,7 +23,7 @@ Bikin form input beserta style css nya
 
 ### Links
 
-- Live Site URL: [https://fm-beginner-qrcode.vercel.app/](https://fm-beginner-qrcode.vercel.app/)
+- Live Site URL: [https://fm-beginner-form-component.vercel.app/](https://fm-beginner-form-component.vercel.app/)
 
 ## My process
 
