@@ -86,6 +86,10 @@ form .error-info {
   text-align: right;
   margin-bottom: 1rem;
   margin-top: 0.4rem;
+  font-style: italic;
+}
+form .success {
+  outline: hsl(154deg, 59%, 51%) solid 1px;
 }
 form .mb-0 {
   margin-bottom: 0;
@@ -124,7 +128,7 @@ footer .link {
 }
 
 .error {
-  outline: hsl(0deg, 100%, 74%) solid 2px;
+  outline: hsl(0deg, 100%, 74%) solid 2px !important;
   color: hsl(0deg, 100%, 74%);
 }
 

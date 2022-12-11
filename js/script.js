@@ -1,5 +1,6 @@
 const inputsEle = document.querySelectorAll('input')
 const emailEle = document.querySelector('#email')
+const formEle = document.querySelector('form')
 
 const addInfoError = (target, text) => {
   // create error info element
@@ -21,6 +22,7 @@ const addIconError = (target) => {
   target.parentNode.insertBefore(img, target)
 }
 
+// check email valid
 const isEmailValid = (email) => {
   const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
@@ -59,7 +61,10 @@ inputsEle.forEach(input => {
     if (errorInfoEle) errorInfoEle.remove()
 
     e.target.classList.remove('mb-0', 'error')
-    
+
+    if (e.target.value.length > 0) {
+      e.target.classList.add('success')
+    }
   })
 })
 
@@ -67,8 +72,7 @@ emailEle.addEventListener('change', (e) => {
   if (!isEmailValid(emailEle.value)) {
     console.log('email salah format')      
     e.target.classList.add('error', 'mb-0')
-    addInfoError(e.target)
+    addInfoError(e.target, 'Looks like this is not an email')
     addIconError(e.target)
   }
-  console.log(e.target)
 })
