@@ -1,6 +1,6 @@
 # Frontend Mentor - QR code component solution
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -13,11 +13,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Useful Resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
-Buat komponen jadi di tengah halaman selalu jadi tantangan, stuck beberapa menit sampe akhirnya dapet solusi buat bikin tengah elemen QR nya
+Bikin form input beserta style css nya
 
 ### Screenshot
 
@@ -40,9 +38,7 @@ Buat komponen jadi di tengah halaman selalu jadi tantangan, stuck beberapa menit
 
 ### What I learned
 
-Buat bikin tengah sebuah komponen width dan height harus ditentukan atau lebih lebar dari ukuran elemennya. Kalau ukuran child element dan parent element sama jadi gabisa dibikin center child elemennya.
-
-Agar elemen ke tengah bisa pake `margin` atau `flex`
+Buat nambahin elemen node baru di Javascript bisa pake `appendChild` atau ga `insertBefore` kalau pengen elemennya sebelum target yang ditentuin
 
 ### Useful resources
 
