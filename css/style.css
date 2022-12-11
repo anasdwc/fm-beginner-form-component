@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+form, main .notification {
+  border-radius: 1rem;
+}
+
+form button, form input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins";
+  background-color: hsl(0deg, 100%, 74%);
+  background-image: url("../images/bg-intro-mobile.png");
+  background-repeat: repeat;
+  background-size: cover;
+  color: white;
+  margin: 3rem 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+header h1 {
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  font-size: 1.6rem;
+}
+header p {
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
+
+main .notification {
+  box-shadow: 0 0.4rem rgba(0, 0, 0, 0.2);
+  background-color: hsl(248deg, 32%, 49%);
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 0.9rem;
+}
+main .notification span.bold {
+  font-weight: 600;
+}
+
+form {
+  box-shadow: 0 0.4rem rgba(0, 0, 0, 0.2);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 1.5rem 0;
+}
+form input {
+  border: 1px solid hsl(246deg, 25%, 77%);
+  font-weight: 700;
+}
+form input:focus-visible {
+  outline: hsl(248deg, 32%, 49%) solid 2px;
+}
+form input::placeholder {
+  font-weight: 700;
+}
+form .form-input {
+  position: relative;
+}
+form .icon {
+  position: absolute;
+  right: 1rem;
+  top: 0.8rem;
+}
+form .error-info {
+  color: hsl(0deg, 100%, 74%);
+  z-index: 1;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: right;
+  margin-bottom: 1rem;
+  margin-top: 0.4rem;
+}
+form .mb-0 {
+  margin-bottom: 0;
+}
+form button {
+  box-shadow: 0 0.4rem hsl(154deg, 59%, 45%);
+  border: none;
+  background-color: hsl(154deg, 59%, 51%);
+  color: white;
+  font-weight: 700;
+  position: relative;
+}
+form button:active {
+  box-shadow: none;
+  position: relative;
+  top: 0.4rem;
+}
+form .small {
+  font-size: 0.7rem;
+  color: hsl(246deg, 25%, 77%);
+  padding: 0 1rem;
+  text-align: center;
+}
+form .small .red {
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.7rem;
+}
+footer .link {
+  color: hsl(248deg, 32%, 49%);
+  font-weight: 600;
+}
+
+.error {
+  outline: hsl(0deg, 100%, 74%) solid 2px;
+  color: hsl(0deg, 100%, 74%);
+}
+
+.none {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    margin: auto;
+    gap: 4rem;
+    max-width: 80vw;
+    justify-items: center;
+  }
+  main {
+    max-width: 500px;
+  }
+  header {
+    text-align: left;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

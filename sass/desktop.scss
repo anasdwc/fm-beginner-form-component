@@ -1,0 +1,36 @@
+@media screen and (min-width: 1000px) {
+  
+  body {
+    background-image: url('../images/bg-intro-desktop.png');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    align-items: center;
+    margin: auto;
+    gap: 4rem;
+    max-width: 80vw;
+    justify-items: center;
+  }
+
+  main {
+    max-width: 500px;
+  }
+
+  header {
+    text-align: left;
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+}
